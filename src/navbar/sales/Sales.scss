@@ -1,0 +1,251 @@
+.sales{
+    padding: 20px;
+    h1{
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .container{
+        display: flex;
+        padding: 10px 0px;
+        gap: 10px;
+        // align-items: center;
+        .left{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            .item{
+                display: flex;
+                background-color: rgb(248, 248, 248);   
+                align-items: flex-start;
+                height: 380px;
+                .left{    
+                    flex: 2;  
+                    padding: 12px;
+                      
+                    img{
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+                .right{
+                    flex: 3;
+                    padding: 20px;
+                    h1{
+                        font-weight: 500;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+                    .rating{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 10px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .review{
+                            display: flex;
+                            gap: 10px;
+                        }
+                        .icons{
+                            display: flex;
+                            gap: 20px;
+                        }
+                    }
+                    .status{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;padding: 5px;
+                        span{
+                            font-size: 12px;
+                        }
+                        .blue{
+                            height: 16px;
+                            width: 16px;
+                            background-color: #7da5fa;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+                    }
+                    hr{
+                        border: 0.5px solid lightgray;
+                        margin: 20px 0;
+                    }
+                    .price{
+                        font-size: 35px;
+                        padding:0 5px;
+                        margin-bottom: 10px;
+                        span{
+                            font-size: 16px;
+                        }
+    
+                    }
+                    .quantity{
+                        display: flex;
+                        gap: 10px;
+                        margin-bottom: 10px;
+                        label{
+                            color: gray;
+                            font-size: 18px;
+                        }
+                        input{
+                            height: 20px;
+                            padding: 5px;
+                            border-radius: 5px;
+                            border: 1px solid lightgray;
+                            text-align: center;
+                            padding: 5px;
+                            &::placeholder{
+                                text-align: center;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                    .buttons{
+                        display: flex;
+                        gap: 20px;
+                        justify-content: space-between;
+    
+                        margin-top: 20px;
+                        button{
+                            width: 250px;
+                            height: 40px;
+                            border: 1px solid lightgray;
+                            border-radius: 10px;
+                            &:hover{
+                                color: black;
+                            }
+                        }
+                        .buy{
+                            background-color: rgb(168, 27, 27);
+                            color: white;
+                        }
+                        .cart{
+                            background-color: #2ca3f1;
+                            color: white;
+                        }
+                    }
+    
+                }
+                
+            }
+            .imgSlide{
+                display: flex;
+                padding: 20px 0;
+                gap: 5px;
+                align-items: center;
+                .img{
+                    width: 40px;
+                    border: 0.5px solid lightgray;
+                    opacity: 50%;
+                    &:hover{
+                        border: 2px solid #2ca3f1;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        opacity: 100%;
+                    }
+                }
+                span{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .reviews{
+                margin-top: 50px;
+                h2{
+                    font-weight: 300;
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                .item{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 20px;
+                    height: 250px;
+                    .user{
+                        display: flex;
+                        align-items: center;
+                        .pp{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            padding: 5px;
+
+                        }
+                        .country{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            color: gray;
+                        
+                            img{
+                                width: 20px;
+                            }
+
+                        }
+                    }
+                    .stars{
+                        display: flex;
+                        gap: 5px;
+
+                        img{
+                            height: 14px;
+                            width: 14px;
+
+                        }
+                        span{
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #ffc108;
+                        }
+                    }
+                    .helpful{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img{
+                            width: 14px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                hr{
+                    height: 0;
+                    border: 0.5px solid lightgray;
+                    margin: 50px 0;
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            padding:0 20px;
+            h2{
+                font-weight: 300;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .items{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            h3{
+                font-weight: 700;
+                font-size: 12px;
+                text-align: right;
+                &:hover{
+                    cursor: pointer;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
