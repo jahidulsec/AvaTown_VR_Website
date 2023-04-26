@@ -16,5 +16,5 @@ npm i react-router-dom
 npm run dev
 ```
 ### Site view
-Website clips [Website](https://mydit-ui-bdl7.vercel.app/)
+Website clips [Website](https://ava-town-vr-website.vercel.app/)
 
